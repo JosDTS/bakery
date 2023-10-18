@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="bakery diagram">
+  <ClassDiagramComponents>
+    <Class name="Product" package="" visibility="public" xPosition="109.0" yPosition="-172.0">
+      <Fields>
+        <Field name="nameProduct" type="String" visibility="private"/>
+        <Field name="idProduct" type="String" visibility="private"/>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="provider" type="Provider" visibility="private"/>
+        <Field name="offerProduct" type="boolen" visibility="private"/>
+        <Field name="typeProduct" type="String" visibility="private"/>
+        <Field name="tax" type="int" visibility="private"/>
+        <Field name="expirationDate" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nameProduct"/>
+          <Argument type="String" name="idProduct"/>
+          <Argument type="double" name="price"/>
+          <Argument type="int" name="quantity"/>
+          <Argument type="Provider" name="provider"/>
+          <Argument type="boolean" name="offerProduct"/>
+          <Argument type="String" name="typeProduct"/>
+          <Argument type="int" name="tax"/>
+          <Argument type="Date" name="expirationDate"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getnameProduct" returnType="String" visibility="public"/>
+        <Method name="setnameProduct" returnType="void" visibility="public">
+          <Argument type="String" name="nameProduct"/>
+        </Method>
+        <Method name="getidProduct" returnType="String" visibility="public"/>
+        <Method name="setidProduct" returnType="void" visibility="public">
+          <Argument type="String" name="idProduct"/>
+        </Method>
+        <Method name="getprice" returnType="double" visibility="public"/>
+        <Method name="setprice" returnType="void" visibility="public">
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="getquantity" returnType="int" visibility="public"/>
+        <Method name="setquantity" returnType="void" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="getprovider" returnType="Provider" visibility="public"/>
+        <Method name="setprovider" returnType="void" visibility="public">
+          <Argument type="Provider" name="provider"/>
+        </Method>
+        <Method name="isofferProduct" returnType="boolean" visibility="public"/>
+        <Method name="setofferProduct" returnType="void" visibility="public">
+          <Argument type="boolean" name="Product"/>
+        </Method>
+        <Method name="gettypeProduct" returnType="String" visibility="public"/>
+        <Method name="settypeProduct" returnType="void" visibility="public">
+          <Argument type="String" name="typeProduct"/>
+        </Method>
+        <Method name="gettax" returnType="int" visibility="public"/>
+        <Method name="settax" returnType="void" visibility="public">
+          <Argument type="int" name="tax"/>
+        </Method>
+        <Method name="getexpirationDate" returnType="Date" visibility="public"/>
+        <Method name="setexpirationDate" returnType="void" visibility="public">
+          <Argument type="Date" name="expirationDate"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Person" package="" visibility="public" xPosition="40.0" yPosition="-105.0">
+      <Fields>
+        <Field name="gender" type="boolean" visibility="private"/>
+        <Field name="age" type="int" visibility="private"/>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="contact" type="Contact" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="gender"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="Contact" name="contac"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="isgender" returnType="boolean" visibility="public"/>
+        <Method name="setgender" returnType="void" visibility="public">
+          <Argument type="boolean" name="gender"/>
+        </Method>
+        <Method name="getage" returnType="int" visibility="public"/>
+        <Method name="setage" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="getid" returnType="String" visibility="public"/>
+        <Method name="setid" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="getcontact" returnType="Contact" visibility="public"/>
+        <Method name="setcontact" returnType="void" visibility="public">
+          <Argument type="Contact" name="contact"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Customer" package="" visibility="public" xPosition="446.0" yPosition="269.0">
+      <Fields>
+        <Field name="idCostumer" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="idCostumer"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getidCostumer" returnType="String" visibility="public"/>
+        <Method name="setidCostumer" returnType="void" visibility="public">
+          <Argument type="String" name="idCostumer"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Employee" package="" visibility="public" xPosition="15.0" yPosition="72.0">
+      <Fields>
+        <Field name="user" type="String" visibility="private"/>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="workarea" type="String" visibility="private"/>
+        <Field name="schedule" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="user"/>
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="workarea"/>
+          <Argument type="String" name="schedule"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getuser" returnType="String" visibility="public"/>
+        <Method name="setuser" returnType="void" visibility="public">
+          <Argument type="String" name="user"/>
+        </Method>
+        <Method name="getid" returnType="String" visibility="public"/>
+        <Method name="setid" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="workarea" returnType="String" visibility="public"/>
+        <Method name="setworarea" returnType="void" visibility="public">
+          <Argument type="String" name="workarea"/>
+        </Method>
+        <Method name="getschedule" returnType="String" visibility="public"/>
+        <Method name="setschedule" returnType="void" visibility="public">
+          <Argument type="String" name="schedule"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Driver " package="" visibility="public" xPosition="40.0" yPosition="350.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="typeLicense" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="typeLicense"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getname" returnType="String" visibility="public"/>
+        <Method name="setname" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getid" returnType="String" visibility="public"/>
+        <Method name="setid" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="gettypeLicense" returnType="String" visibility="public"/>
+        <Method name="settypeLicense" returnType="void" visibility="public">
+          <Argument type="String" name="typeLicense"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Vehicle" package="" visibility="public" xPosition="462.0" yPosition="303.0">
+      <Fields>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="plate" type="String" visibility="private"/>
+        <Field name="typeVehicle" type="String" visibility="private"/>
+        <Field name="model" type="String" visibility="private"/>
+        <Field name="year" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="String" name="plate"/>
+          <Argument type="String" name="typeVehicle"/>
+          <Argument type="String" name="model"/>
+          <Argument type="int" name="year"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getcolor" returnType="String" visibility="public"/>
+        <Method name="setcolor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getplate" returnType="String" visibility="public"/>
+        <Method name="setplate" returnType="void" visibility="public">
+          <Argument type="String" name="plate"/>
+        </Method>
+        <Method name="gettypeVehicle" returnType="String" visibility="public"/>
+        <Method name="settypeVehicle" returnType="void" visibility="public">
+          <Argument type="String" name="typeVehicle"/>
+        </Method>
+        <Method name="getmodel" returnType="String" visibility="public"/>
+        <Method name="setmodel" returnType="void" visibility="public">
+          <Argument type="String" name="model"/>
+        </Method>
+        <Method name="getyear" returnType="int" visibility="public"/>
+        <Method name="setyear" returnType="void" visibility="public">
+          <Argument type="int" name="year"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Invoice" package="" visibility="public" xPosition="693.0" yPosition="590.0">
+      <Fields>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="clientName" type="String" visibility="private"/>
+        <Field name="employeeName" type="String" visibility="private"/>
+        <Field name="itemList" type="String" visibility="private"/>
+        <Field name="companyInformation" type="String" visibility="private"/>
+        <Field name="Date" type="Date" visibility="private"/>
+        <Field name="generalOffer" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="clientName"/>
+          <Argument type="String" name="employeeName"/>
+          <Argument type="String" name="itemList"/>
+          <Argument type="String" name="companyInformation"/>
+          <Argument type="Date" name="Date"/>
+          <Argument type="boolean" name="generalOffer"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getid" returnType="String" visibility="public"/>
+        <Method name="setid" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="getclientName" returnType="String" visibility="public"/>
+        <Method name="setclientName" returnType="void" visibility="public">
+          <Argument type="String" name="clientName"/>
+        </Method>
+        <Method name="getemployeeName" returnType="String" visibility="public"/>
+        <Method name="setemployeeName" returnType="void" visibility="public">
+          <Argument type="String" name="employeeName"/>
+        </Method>
+        <Method name="getitemList" returnType="String" visibility="public"/>
+        <Method name="setitemList" returnType="void" visibility="public">
+          <Argument type="String" name="itemList"/>
+        </Method>
+        <Method name="getcompanyInformation" returnType="String" visibility="public"/>
+        <Method name="setcompanyInformation" returnType="void" visibility="public">
+          <Argument type="String" name="companyInformation"/>
+        </Method>
+        <Method name="getDate" returnType="Date" visibility="public"/>
+        <Method name="setDate" returnType="void" visibility="public">
+          <Argument type="Date" name="Date"/>
+        </Method>
+        <Method name="isgeneralOffer" returnType="boolean" visibility="public"/>
+        <Method name="setgeneralOffer" returnType="void" visibility="public">
+          <Argument type="boolean" name="generalOffer"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Contact " package="" visibility="public" xPosition="794.0" yPosition="26.0">
+      <Fields>
+        <Field name="phone" type="int" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="socialNetwoks" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="phone"/>
+          <Argument type="String" name="address"/>
+          <Argument type="String" name="email"/>
+          <Argument type="String" name="socialNetwoks"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getphone" returnType="int" visibility="public"/>
+        <Method name="setphone" returnType="void" visibility="public">
+          <Argument type="int" name="phone"/>
+        </Method>
+        <Method name="getaddress" returnType="String" visibility="public"/>
+        <Method name="setaddress" returnType="void" visibility="public">
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="getemail" returnType="String" visibility="public"/>
+        <Method name="setemail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getsocialNetwoks" returnType="String" visibility="public"/>
+        <Method name="setsocialNetwoks" returnType="void" visibility="public">
+          <Argument type="String" name="socialNetwoks"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Provider" package="" visibility="public" xPosition="1008.0" yPosition="26.0">
+      <Fields>
+        <Field name="idProvider" type="String" visibility="private"/>
+        <Field name="nameProvider" type="String" visibility="private"/>
+        <Field name="status" type="boolean" visibility="private"/>
+        <Field name="typeProvider" type="String" visibility="private"/>
+        <Field name="deadLine" type="Date" visibility="private"/>
+        <Field name="contac" type="Contac" visibility="private"/>
+        <Field name="invoice" type="Invoice" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="idProvider"/>
+          <Argument type="String" name="nameProvider"/>
+          <Argument type="boolean" name="status"/>
+          <Argument type="String" name="typeProvider"/>
+          <Argument type="Date" name="deadLine"/>
+          <Argument type="Contac" name="contac"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getidProvider" returnType="String" visibility="public"/>
+        <Method name="setidProvider" returnType="void" visibility="public">
+          <Argument type="String" name="idProvider"/>
+        </Method>
+        <Method name="nameProduct" returnType="String" visibility="public"/>
+        <Method name="setnameProduct" returnType="void" visibility="public">
+          <Argument type="String" name="nameProduct"/>
+        </Method>
+        <Method name="isstatus" returnType="boolean" visibility="public"/>
+        <Method name="setstatus" returnType="void" visibility="public">
+          <Argument type="boolean" name="status"/>
+        </Method>
+        <Method name="gettypeProvider" returnType="String" visibility="public"/>
+        <Method name="settypeProvider" returnType="void" visibility="public">
+          <Argument type="String" name="typeProvider"/>
+        </Method>
+        <Method name="getdeadLine" returnType="Date" visibility="public"/>
+        <Method name="setdeadLine" returnType="void" visibility="public">
+          <Argument type="Date" name="deadLine"/>
+        </Method>
+        <Method name="getcontac" returnType="Contac" visibility="public"/>
+        <Method name="setcontac" returnType="void" visibility="public">
+          <Argument type="Contac" name="contac"/>
+        </Method>
+        <Method name="getinvoice" returnType="Invoice" visibility="public"/>
+        <Method name="setinvoice" returnType="void" visibility="public">
+          <Argument type="Invoice" name="invoice"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="Factura" source="Provider" target="Invoice" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="." source="Product" target="Provider" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="." source="Person" target="Contact " type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Contacto" source="Person" target="Contact " sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Customer" target="Person"/>
+    <HasRelation name="." source="Invoice" target="Customer" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Contacto" source="Provider" target="Contact " sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="." source="Provider" target="Invoice" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Employee" target="Person"/>
+    <IsRelation name="is" source="Driver " target="Employee"/>
+    <UseRelation name="Producto" source="Provider" target="Product" sourceCardinality="0..*" targetCardinality="0..*"/>
+    <HasRelation name="asociación" source="Driver " target="Vehicle" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="." source="Provider" target="Contact " type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
