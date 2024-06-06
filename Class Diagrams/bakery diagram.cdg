@@ -124,7 +124,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Employee" package="" visibility="public" xPosition="15.0" yPosition="72.0">
+    <Class name="Employee" package="" visibility="public" xPosition="55.0" yPosition="303.0">
       <Fields>
         <Field name="user" type="String" visibility="private"/>
         <Field name="id" type="String" visibility="private"/>
@@ -160,7 +160,7 @@
         <Method name="toString" returnType="String" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Driver " package="" visibility="public" xPosition="40.0" yPosition="350.0">
+    <Class name="Driver " package="" visibility="public" xPosition="286.0" yPosition="303.0">
       <Fields>
         <Field name="name" type="String" visibility="private"/>
         <Field name="id" type="String" visibility="private"/>
@@ -377,18 +377,18 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation name="Factura" source="Provider" target="Invoice" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="." source="Product" target="Provider" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <HasRelation name="." source="Person" target="Contact " type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <UseRelation name="Contacto" source="Person" target="Contact " sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Customer" target="Person"/>
-    <HasRelation name="." source="Invoice" target="Customer" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <UseRelation name="Contacto" source="Provider" target="Contact " sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="." source="Provider" target="Invoice" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="Employee" target="Person"/>
-    <IsRelation name="is" source="Driver " target="Employee"/>
-    <UseRelation name="Producto" source="Provider" target="Product" sourceCardinality="0..*" targetCardinality="0..*"/>
     <HasRelation name="asociación" source="Driver " target="Vehicle" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Producto" source="Provider" target="Product" sourceCardinality="0..*" targetCardinality="0..*"/>
+    <IsRelation name="is" source="Driver " target="Employee"/>
+    <HasRelation name="." source="Product" target="Provider" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Employee" target="Person"/>
     <HasRelation name="." source="Provider" target="Contact " type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Customer" target="Person"/>
+    <UseRelation name="Contacto" source="Provider" target="Contact " sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="." source="Invoice" target="Customer" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="." source="Provider" target="Invoice" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation name="Contacto" source="Person" target="Contact " sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="Factura" source="Provider" target="Invoice" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="." source="Person" target="Contact " type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
